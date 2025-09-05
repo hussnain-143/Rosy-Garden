@@ -1,10 +1,14 @@
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import AppRoutes from './routes/route'
 
 function App() {
 
   return (
     <>
-        <h2 className='text-amber-500 font-dido' >Working</h2>
+      <BrowserRouter>
+        <AppRoutes/>
+      </BrowserRouter>
     </>
   )
 }
